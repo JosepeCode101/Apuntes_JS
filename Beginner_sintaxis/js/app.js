@@ -1,3 +1,4 @@
+"use strict"
 // Aprendiendo a usar JS
 
 // E L   O P E R A D O R   T E R N A R I O
