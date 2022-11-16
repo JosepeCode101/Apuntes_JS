@@ -19,3 +19,15 @@ var personaJSON = JSON.stringify(calvo);
 
 //Reconvertit el String a objeto JSON
 var nuevaPersona = JSON.parse(personaJSON);
+
+
+// Probando cositas de operadores aritmeticos
+
+// Comprobando como funciona el modulo o resto
+var datoA = 25;
+var datoB = 2;
+var resto = datoA % datoB;
+var divisionNormal = datoA / datoB;
+
+console.log('El resto de dividir ' + datoA + ' entre ' + datoB + ' tiene como resultado: ' + resto);
+console.log(divisionNormal);
