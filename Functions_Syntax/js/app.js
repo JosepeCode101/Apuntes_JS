@@ -32,15 +32,23 @@ debugger;
 var calvoNombre = prompt('¿Como te llamas?');
 var calvoEdad = prompt('¿Que edad tienes?');
 console.log(isNaN(calvoEdad));
+try {
+    parseInt(calvoEdad);
+    
+} catch (error) {
+    
+}
 // Pidiendo datos de manera robusta
-while (isNaN(calvoEdad) || (typeof calvoNombre) == 'number') {
+//var calvoTipo = typeof calvoNombre;
+//console.log(calvoTipo);
+/*while (isNaN(calvoEdad) || typeof calvoNombre === "number") {
     alert('No se han introducido valores correctos');
     if ((typeof calvoNombre) === 'number'){
         calvoNombre = prompt('No seas trol e introduce un nombre');
     }else if (isNaN(calvoEdad)){
         calvoEdad = prompt('No seas trol e introduce un valor de edad Real');
     }
-}
+}*/
 saludar1(calvoNombre, calvoEdad);
 
 /*if (isNaN(calvoEdad) && typeof (calvoNombre === 'number')){
