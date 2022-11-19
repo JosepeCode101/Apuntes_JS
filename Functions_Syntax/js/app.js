@@ -26,18 +26,21 @@ function saludar1 (nombre, edad) {
     return resultado;
 
 }
-var x = 3;
-console.log(typeof x);
-debugger; 
-var calvoNombre = prompt('¿Como te llamas?');
-var calvoEdad = prompt('¿Que edad tienes?');
-console.log(isNaN(calvoEdad));
-try {
-    parseInt(calvoEdad);
-    
-} catch (error) {
-    
-}
+//var calvoNombre = prompt('¿Como te llamas?');
+//var calvoEdad = prompt('¿Que edad tienes?');
+//var mensaje1 = saludar1(calvoNombre, calvoEdad);
+var mensaje2 = saludar1("JosepeCode", 26);
+//console.log(mensaje1);
+console.log(mensaje2);
+
+// -------------------------------------------------------------------------------------------------------------
+//var x = 3;
+//console.log(typeof x);
+//debugger; 
+//var calvoNombre = prompt('¿Como te llamas?');
+//var calvoEdad = prompt('¿Que edad tienes?');
+//console.log(isNaN(calvoEdad));
+// Hacer funciones regresivas para capturar bien el dato
 // Pidiendo datos de manera robusta
 //var calvoTipo = typeof calvoNombre;
 //console.log(calvoTipo);
@@ -49,7 +52,7 @@ try {
         calvoEdad = prompt('No seas trol e introduce un valor de edad Real');
     }
 }*/
-saludar1(calvoNombre, calvoEdad);
+
 
 /*if (isNaN(calvoEdad) && typeof (calvoNombre === 'number')){
     alert('No has introducido un nombre, ni una edad adecuadas, PILLÍN');
@@ -59,8 +62,14 @@ saludar1(calvoNombre, calvoEdad);
     
 }*/
 
-//var mensaje = saludar1("JosepeCode", 25);
+//----------------------------------------------------------------------------------------------------------------
 
+// FUNCIÓN CON PARÁMETROS INICIALIZADOS
+function contar (cantidad=100){
+    return console.log('Total: ', cantidad);
+}
+contar(500);
+contar();
 
 
 //console.log(mensaje);
