@@ -143,9 +143,9 @@ var validacion = () => {
 console.log(validacion());
 
 // CREANDO BUFFERS (NODE.js REQUIRED∫)
-let buffer = Buffer.alloc(1);
+//let buffer = Buffer.alloc(1);
 
-console.log(buffer);
+//console.log(buffer);
 
 
 
