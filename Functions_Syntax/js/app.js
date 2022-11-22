@@ -72,34 +72,30 @@ contar(500);
 contar();
 
 
-//console.log(mensaje);
-
-// CREANDO BUFFERS (NODE.js REQUIRED∫)
-/*let buffer = Buffer.alloc(1);
-
-console.log(buffer);*/
-
-
-
-
-
 // PARÁMETROS DE TIPO REST Y DE TIPO SPREAD
-
-/*function cocinar (ingrediente1, ingrediente2, ingrediente3) {
+// El parametro REST se declara con la función con los ...
+function cocinar (ingrediente1, ingrediente2, ingrediente3, ...otros) {
 
     console.log('1: ', ingrediente1);
     console.log("2: ", ingrediente2);
     console.log("3: ", ingrediente3);
+    console.log('otros: ', otros);
 
-}*/
+}
 
-//var ingredientesBase = ["Pollo", "Tomate"];
+var ingredientesBase = ["Pollo", "Tomate"];
+// El parametro SPREAD se declara CON LA INVOCACIÓN de la función
+cocinar(...ingredientesBase, "Arroz", "Agua", "Platano", "Clara de huevo");
 
-//cocinar(...ingredientesBase, "Arroz");
 
 //FUNCIONES ANÓNIMAS
 //no funciona con el método use strict
+var saludar = function(adjetivo) {
+    var mensaje = "Hola calvo de " + adjetivo;
 
+    return mensaje;
+}
+// Para poder utilizar este método debes eliminar el 'use strict'
 /*(
     function() {
         var mensaje = "Hola calvo";
@@ -107,31 +103,54 @@ console.log(buffer);*/
     }
 )()*/
 
-/*var saludar = function(adjetivo) {
-    var mensaje = "Hola calvo de " + adjetivo;
-
-    return mensaje;
-}*/
-
 // CALLBACKS
 // Partimos de una función para calcular
-/*function calcular (datoA, datoB, sumarCBB, restarCBB) {
+function calcular (datoA, datoB, sumarCBB, restarCBB) {
     var suma = datoA + datoB;
     var resta = datoA - datoB;
 
     sumarCBB(suma);
     restarCBB(resta);
 }
-
+// Al invocar la función calcular estamos pasando dos parámetros y dos funciones como parametros
 calcular(2, 3, function (resultado) {
     console.log('suma ', resultado)
 }, function(resultado){
-    console.log('resta ', resultadov)
-});*/
+    console.log('resta ', resultado)
+});
 
-//var saludar = nombre => "Hola " + nombre;
+// ARROW FUNCTIONS 
 
-//console.log(saludar('Carlos')); 
+var saludar = nombre => "Hola " + nombre;
+console.log(saludar('Carlos')); 
+
+var sumar = cantidad => cantidad+10;
+console.log(sumar(10));
+
+var calcular2 = (datoA, datoB) => datoA + datoB;
+console.log(calcular2(2, 5));
+
+var geneCal = (datoA, datoB) => {
+    var datoC = 5;
+    return datoA+datoB+datoC;
+}
+console.log(geneCal(2, 3));
+
+
+var validacion = () => {
+    return "VALIDACIÓN CORRECTA"
+}
+console.log(validacion());
+
+// CREANDO BUFFERS (NODE.js REQUIRED∫)
+let buffer = Buffer.alloc(1);
+
+console.log(buffer);
+
+
+
+
+
 
 //let nombre = prompt("Dime tu nombre");
 //alert(nombre);
@@ -141,16 +160,7 @@ calcular(2, 3, function (resultado) {
 //var nombre = mensaje.substring(6, 6);
 //alert(nombre);
 
-//var sumar = cantidad => cantidad+10;
-//console.log(sumar(10));
-
-/*var generar = (datoA, datoB) => {
-    var datoC = 5;
-    return datoA+datoB+datoC;
-}
-console.log(generar(10,15));
-
-const boton = document.querySelector('.boton');
+/*const boton = document.querySelector('.boton');
 
 boton.addEventListener('click', function() {
     console.log(this);
