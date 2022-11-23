@@ -1,5 +1,7 @@
 "use strict"
 //console.log('Esto se está ejecutando');
+debugger;
+
 function getName() {
     const name = prompt('Inserte un nombre');
     return isNaN(name) ? name : getName();
@@ -28,11 +30,13 @@ function getStringPrompt(message) {
 }
   
 function getPerson() {
-    const name = getStringPrompt('Dime tu nombre');
-    const age = getNumericPrompt('Dime tu edad');
-   return { name, age };
+    const name = result;
+    const age = result2;
+    const saludoP = {nombre: name, edad: age};
+   return saludoP;
 }
-  
-const {name, age} = getPerson();
+console.log(getPerson())
+//const {name, age} = getPerson();
 //console.log('Esto se está ejecutando');
-//alert('Hola' + {name} + 'con' + {age} + 'años');
+//console.log(age)
+//alert('Hola', $,{name}  ,'con', $,{age}  ,'años');
