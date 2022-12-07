@@ -15,3 +15,8 @@ boton.addEventListener('click', function(){
 boton.addEventListener('mouseover', function(){
     console.log("The mouse is over the button");
 })
+
+// mouseout
+boton.addEventListener('mouseout', function(){
+    console.log("The mouse is out the button");
+})
