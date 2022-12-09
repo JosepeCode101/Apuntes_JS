@@ -7,7 +7,7 @@ video.addEventListener('play', function(){
 })
 
 video.addEventListener('seeking', function(){
-    console.log("Se está buscando un frame en el video");
+    console.log("Se está buscando un frame en el video", this.currentTime);
 })
 
 video.addEventListener('ended', function(){
