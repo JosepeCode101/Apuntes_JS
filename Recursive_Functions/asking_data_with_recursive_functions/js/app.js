@@ -18,7 +18,7 @@ function getAge () {
 const result2 = getAge();
 //console.log(result2);
 
-
+debugger;
 function getNumericPrompt(message) {
     const age = prompt(message);
     return !isNaN(age) ?  age : getNumericPrompt(message);
@@ -28,7 +28,7 @@ function getStringPrompt(message) {
     const name = prompt(message);
     return isNaN(name) ?  name : getStringPrompt(message);
 }
-  
+
 function getPerson() {
     const name = result;
     const age = result2;

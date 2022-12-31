@@ -11,9 +11,12 @@
 //Calcular el factorial dentro de una variable y pasar el resultado por consola
 
 // Factorial de un numero. 3! = 3 x 2 x 1 = 6 // 1! = 1 // 4! = 4 x 3 x 2 x 1 = 24
+// El caso base es el 1, siempre acabamos multiplicando por 1
+// y en el resto de casos la función será recursiva 
+// Watch cr7 with debugger 
 
 var cr7=1;
-// debugger;
+//debugger;
 const factorial = n => {
     //debugger;
     if (n <= 1){
