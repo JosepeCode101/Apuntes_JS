@@ -1,6 +1,20 @@
 "use strict"
 
 //-----------------------------------------------------------
+// Diferentes maneras de interpretar el numero
+
+// Desde la consola haciendo edad + 5 nos sumará dando el resulado 31
+var edad = 26;
+
+// Desde la consola haciendo stock + 20 nos concatenará dando el resultado 10020
+var stock = '100';
+
+// Para parsear stock a una variable numérica 
+var nuevoStock = Number(stock);
+// Tambien se puede utilizar "parseInt()" para numeros enteros 
+// O "parseFloat()" para números decimales
+
+//-----------------------------------------------------------
 // Valor positivo mas largo posible que puede manejar JS 
 console.log("MAX_VALUE: ", Number.MAX_VALUE);
 
