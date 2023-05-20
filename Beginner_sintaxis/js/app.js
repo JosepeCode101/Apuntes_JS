@@ -1,6 +1,53 @@
 "use strict"
 // Aprendiendo a usar JS
 
+// D A T O S   S T R I N G 
+
+var bebida = "agua";
+var edad = 34;
+// Para convertir la edad a una cadena de texto utilizamos el método String
+var edadtxt = String(edad);
+
+
+
+// D A T O S   B O O L E A N O S
+
+// Se puede asignar un valor directamente a la variable booleana
+var activo = false;
+// O bien se puede evaluar el estado para determinar el valor
+var estado = Boolean(10 > 9);
+
+
+
+// D A T O S   D E   F E C H A
+var fecha = new Date();
+// Metodos que se pueden utilizar con fechas
+// new Date() ---> Generar una nueva fecha
+// get.Day()  ---> Nos dará el día de la semana que te encuentras lunes = 1 / Domingo = 7
+// get.Date() ---> Nos dará el día del mes en el que nos encontramos 20, en el caso de hoy 20 de Mayo
+// set.Date() ---> Para cambiar el día del mes con el que quieres trabajar (Ejemplo, crear un evento de calendario)
+
+
+
+// D A T O S    S Í M B O L O S 
+// Los simbolos son datos unicos que se generan para hacer un control de la aplicación
+var simbolo1 = Symbol();
+var simbolo2 = Symbol();
+// Si le preguntamos a la consola si (simbolo1 === simbolo2) esto nos dará un valor de false
+// Podemos utilizar el símbolo pra determinar en que ambiente nos encontramos, producción, desarrollo, despliegue...
+var ambiente = Symbol('dev');
+
+
+
+// O B J E T O S    J S O N
+// JavaScript Object Notation
+var persona1 = {nombre: 'Josepe', twitter: 'JosepeCode'};
+// Convertir este objeto en una cadena de texto
+var persona1String = JSON.stringify(persona1);
+// Reconvertir la cadena de texto en un objeto JSON
+var persona1JSON = JSON.parse(persona1String);
+
+
 // E L   O P E R A D O R   T E R N A R I O
 
 // Condicion ? TRUE : FALSE
