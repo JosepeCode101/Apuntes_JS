@@ -14,6 +14,7 @@ function saludar() {
 
 saludar();
 
+//--------------------------------------------------------------------
 // FUNCIÓN CON PARAMETROS
 
 function saludar1 (nombre, edad) {
@@ -26,6 +27,7 @@ function saludar1 (nombre, edad) {
     return resultado;
 
 }
+
 //var calvoNombre = prompt('¿Como te llamas?');
 //var calvoEdad = prompt('¿Que edad tienes?');
 //var mensaje1 = saludar1(calvoNombre, calvoEdad);
@@ -73,7 +75,8 @@ contar();
 
 
 // PARÁMETROS DE TIPO REST Y DE TIPO SPREAD
-// El parametro REST se declara con la función con los ...
+// El parametro REST se declara con la función Sirve para introducir más datos cuando se reciben
+// mas datos de los esperados
 function cocinar (ingrediente1, ingrediente2, ingrediente3, ...otros) {
 
     console.log('1: ', ingrediente1);
@@ -87,6 +90,7 @@ var ingredientesBase = ["Pollo", "Tomate"];
 // El parametro SPREAD se declara CON LA INVOCACIÓN de la función
 cocinar(...ingredientesBase, "Arroz", "Agua", "Platano", "Clara de huevo");
 
+//----------------------------------------------------------------------------------------------------------------
 
 //FUNCIONES ANÓNIMAS
 //no funciona con el método use strict
@@ -103,6 +107,7 @@ var saludar = function(adjetivo) {
     }
 )()*/
 
+//----------------------------------------------------------------------------------------------------------------
 // CALLBACKS
 // Partimos de una función para calcular
 function calcular (datoA, datoB, sumarCBB, restarCBB) {
@@ -119,6 +124,7 @@ calcular(2, 3, function (resultado) {
     console.log('resta ', resultado)
 });
 
+//----------------------------------------------------------------------------------------------------------------
 // ARROW FUNCTIONS 
 
 var saludar = nombre => "Hola " + nombre;

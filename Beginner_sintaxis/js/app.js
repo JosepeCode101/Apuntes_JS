@@ -78,9 +78,15 @@ var persona = {
 }
 // Expected output  -> string boolean string number
 console.log(typeof cadena);
+// string
 console.log(typeof interruptor);
+// booolean
 console.log(typeof persona.nombre);
+// string
 console.log(typeof persona.edad);
+// numbrer
+console.log(typeof persona)
+// object
 
 // I F  /  E L S E   E N   J A V A S C R I P T
 // Expected output  ->  "activado en else"

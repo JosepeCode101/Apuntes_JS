@@ -1,5 +1,7 @@
 "use strict"
 
+// Trabajando con eventos
+
 // Mouse Events
 
 // Asociar elementos del html con el JS para trabar con ellos
